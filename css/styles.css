@@ -2724,6 +2724,15 @@ p {
   max-width: 18ch;
 }
 
+.plans-catalog-heading .plans-catalog-heading__banner {
+  max-width: none;
+  padding: var(--space-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  background: var(--color-surface-alt);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
 .plans-catalog-heading > p:last-child {
   max-width: 62ch;
 }
