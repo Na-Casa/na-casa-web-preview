@@ -2916,6 +2916,31 @@ p {
   margin-top: 1.35rem;
 }
 
+.night-care-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.45fr);
+  gap: var(--gap-layout);
+  align-items: center;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-sage);
+  border-radius: var(--radius-large);
+  background: var(--color-card-wellbeing);
+}
+
+.night-care-banner h2 { font-size: clamp(1.75rem, 3vw, 2.6rem); }
+.night-care-banner__details { min-width: 0; }
+.night-care-banner__price {
+  margin-bottom: 0;
+  color: var(--color-text-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+}
+
+@media (max-width: 820px) {
+  .night-care-banner { grid-template-columns: 1fr; }
+}
+
 .plan-detail-hero {
   padding-block: clamp(2.75rem, 6vw, 5rem);
   background: var(--color-surface-alt);
@@ -3024,6 +3049,13 @@ p {
   font-weight: 800;
   text-align: right;
 }
+
+.plan-detail-summary--care > div {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.25rem;
+}
+
+.plan-detail-summary--care dd { text-align: left; }
 
 .plan-detail-content-section {
   padding-block: clamp(3.5rem, 7vw, 5.75rem);
